@@ -1,0 +1,93 @@
+@charset "utf-8";
+html,body {
+  -webkit-text-size-adjust: none;
+  height: 100%; 
+}
+
+body,div,img,form,h2,a{
+	margin:0;
+	padding:0;
+}
+
+img{
+	border:none;
+	max-width: 100%;
+    height: auto;
+}
+
+body{
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	line-height:1.8;
+	font-size:10px;
+	text-align:center;
+	background: url(bg.png);
+}
+
+
+
+article {
+  margin: 0;
+  padding: 0;
+	text-align: left;
+	margin: 0 auto;
+	min-height: 100%;
+	background: var(--color-article-bc, #FFF);
+}
+
+@media only screen and (min-width: 750px) { article{ max-width: 740px; } }
+
+article .block {
+  padding: 0 10px 5px 10px;
+  position: relative;
+  background: var(--color-article-bc, #FFF);
+}
+article .block_seed{
+	padding: 0 3px 5px 3px;
+	position: relative;
+	background: var(--color-article-bc, #FFF);
+}
+
+h2{
+	font-size: 140%;
+	
+	font-weight: bold;
+	color:  var(--color-h2, #FFF);
+	padding: 7px 10px;
+	background: var(--color-title-bc, rgb(41, 41, 41));
+    
+}
+
+h2{
+	font-size: 140%;
+	font-weight: bold;
+	color:  var(--color-h2, #FFF);
+	padding: 7px 10px;
+	background: var(--color-title-bc, rgb(56,56,56));
+	background: var(--color-title-bc, linear-gradient(to bottom,  rgba(56,56,56,1) 0%,rgba(25,25,25,1) 26%,rgba(0,0,0,1) 51%,rgba(25,25,25,1) 83%,rgba(30,30,30,1) 100%));
+
+}
+
+h3{
+	font-size: 100%;
+	font-weight: bold;
+	color:  var(--color-h3, #333);
+	padding: 3px 7px;
+	background: var(--color-title-bc, #f1f1f1);
+	border-top: 1px solid var(--color-h3-border, #CCC);
+	border-bottom: 1px solid var(--color-h3-border, #CCC);
+}
+
+div{
+    padding: 0px 10px;
+}
+
+h1,h3,h4,h5{
+	font-size:100%;
+	font-weight:normal;
+}
+
+a{
+	outline:none;
+	text-decoration:none;
+	
+}
