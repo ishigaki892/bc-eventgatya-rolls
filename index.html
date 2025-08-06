@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>bc-eventgatya-rolls</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="etable.css">
+</head>
+<body>
+<article>
+    <h2 style="display:flex;align-items:center;" onclick="changetype()">イベントガチャロールズ</h2>
+    <div id="seed_block" class="block">
+    nextguranteed:
+    <select id="nextguranteed">
+        <option value="0">非表示</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option> 
+    </select>
+    　　
+    <span id="lr"></span>
+    <br>
+    <div><p class="litele_space" style="margin-bottom: 0.2rem;"></p></div>
+    <input id="copybutton" type="button" value="シードをコピー">
+    <br>
+    <div><p class="litele_space" style="margin-bottom: 0.3rem;"></p></div>
+    seed:
+    <input id="seed_select" type="number" oninput="javascript:if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" style="width:20%" value="1" min="1" max="4294967295">
+    <br>
+    <input id="ok_button" type="button" value="OK">
+    <br>
+    <div><p class="litele_space" style="margin-bottom: 0.3rem;"></p></div>
+    <table id="gatya_table_wrapper">
+        <tbody id="gatya_table" class="table_style_eseed">
+            <tr>
+                <th id="number_blocks" style="width: 2.5%;"></th>
+                <th id="E_blocksa" style="width: 24.3%;">E</th>
+                <th id="G_blocksa" style="width: 24.3%;">G</th>
+                <th id="E_blocksb" style="width: 24.3%;">E</th>
+                <th id="G_blocksb" style="width: 24.3%;">G</th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <a href="https://discord.gg/n8aUfhng">contact me</a>
+</article>
+<script src="etable.js"></script>
+</body>
+</html>
