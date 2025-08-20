@@ -188,7 +188,7 @@ function getKaK(seed, arr, RLa, RLb, nameList, labelOffsets, valueFn, gatya, rou
 	const kaburi3 = kaburi2.slice()
 	kaburi3.splice(index3,1);
 	let daburu = "F", tripuru = "F", targetseedNm = 0;
-	if (RLb[(i) * 5 - 10] === "3" && RLb[(i) * 5 - 9] === name) {
+	if (RLb[(i-1) * 5 - 10] === "3" && RLb[(i-1) * 5 - 9] === name) {
 	  
 	  if (name) {
 		kaburi = kaburi1[kaburi_shift.random() % kaburi1.length];
@@ -225,7 +225,7 @@ function getKaK(seed, arr, RLa, RLb, nameList, labelOffsets, valueFn, gatya, rou
 	  }
 	  if (name) n_seed_link = `<a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a>`;
 	  if (name === "闇猫目") n_seed_link = `<b><a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a></b>  `;
-	} else if (RLa[(i) * 5 - 5] === "2" && RLa[(i) * 5 - 4] === name) {
+	} else if (RLa[(i-1) * 5 - 5] === "2" && RLa[(i-1) * 5 - 4] === name) {
 	  
 	  if (name) {
 		kaburi = kaburi1[kaburi_shift.random() % kaburi1.length];
@@ -262,7 +262,7 @@ function getKaK(seed, arr, RLa, RLb, nameList, labelOffsets, valueFn, gatya, rou
 	  }
 	  if (name) n_seed_link = `<a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a>`;
 	  if (name === "闇猫目") n_seed_link = `<b><a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a></b>  `;
-	} else if (RLb[(i) * 5 - 5] === "1" && RLb[(i) * 5 - 4] === name) {
+	} else if (RLb[(i-1) * 5 - 5] === "1" && RLb[(i-1) * 5 - 4] === name) {
 	  if (name) {
 		kaburi = kaburi1[kaburi_shift.random() % kaburi1.length];
 		if (kaburi === name) {
