@@ -294,7 +294,7 @@ function getKaK(seed, arr, RLa, RLb, nameList, labelOffsets, valueFn, gatya, rou
 		const color = getTextColor(kaburi);
 		const targetSeed = tripuru === "T" ? r5 : daburu === "T" ? r4 : r3;
 		const label = tripuru === "T" ? labelOffsets.triple : daburu === "T" ? labelOffsets.double : labelOffsets.single;
-		k_seed_link = `<br>${label}${i + targetseedNm})<a href="${baseUrl}?seed=${targetSeed} style="color:${color};">${kaburi}</a>`;
+		k_seed_link = `<br>${label}${i + targetseedNm})<a href="${baseUrl}?seed=${targetSeed}" style="color:${color};">${kaburi}</a>`;
 	  }
 	  if (name) n_seed_link = `<a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a>`;
 	  if (name === "闇猫目") n_seed_link = `<b><a href="${baseUrl}?seed=${seed}" style="color:${getTextColor(name)}; font-size:${getIfYAMIME(name)}">${name}</a></b>  `;
